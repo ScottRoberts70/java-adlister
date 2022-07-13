@@ -6,15 +6,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "TestServlet", urlPatterns = "/test")
-public class TestServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String firstName = request.getParameter("name");
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<h1>Hello " + firstName + "</h1>");
-        response.sendRedirect("/HelloWorld");
-    }
-}
 
+@WebServlet(name = "PageCounter", urlPatterns = "/count")
+public class PageCounter extends HttpServlet {
+    private int viewCount;
+    public void init() {
+        viewCount = 0;
+    }
+@Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String pageCount = request.getParameter("count");
+        response.setContentType("text/html");
+        viewCount++;
+        PrintWriter out = response.getWriter();
+        out.println("<h1>" + viewCount + "</h1>");
+
+    }
+
+}
