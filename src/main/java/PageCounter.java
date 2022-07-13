@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Objects;
 
 
 @WebServlet(name = "PageCounter", urlPatterns = "/count")
@@ -15,12 +16,11 @@ public class PageCounter extends HttpServlet {
     }
 @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String pageCount = request.getParameter("count");
+        boolean pageCount = request.getParameter("reset") != null;
         response.setContentType("text/html");
-        viewCount++;
         PrintWriter out = response.getWriter();
+        if (pageCount) viewCount = 0;
+        viewCount++;
         out.println("<h1>" + viewCount + "</h1>");
-
     }
-
 }
