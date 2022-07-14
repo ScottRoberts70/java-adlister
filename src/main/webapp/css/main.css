@@ -1,3 +1,194 @@
-body{
-        background-color: slategray;
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-size: 20px;*/
+/*}*/
+
+.grid-container{
+    height: 50vh;
+    border: 10px solid lightslategray;
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+}
+
+.grid-item{
+    background-color: #8F7F6F;
+    opacity: 0.5;
+    border: 3px solid lightslategray;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item-1{
+
+}
+
+.item-2{
+
+}
+
+.item-3{
+
+}
+
+body {
+    background-color: lightslategray;
+    font-family: Galvji, serif;
+}
+
+
+form {
+    font-family: "Arial Black", serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.container1{
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    height: 50%;
+}
+
+.container_image{
+    width: 240px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #897799;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8F7F6F;
+}
+
+.animated-grid {
+    height: 85vh;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        'a b c d'
+        'l ⭐️ ⭐️ e'
+        'k ⭐️ ⭐️ f'
+        'j i h g';
+
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 240px auto auto 240px;
+
+    --stagger-delay: 100ms;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card {
+    background-color: #779989;
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+
+}
+
+.card:nth-child(1) {
+    grid-area: a;
+    animation-delay: calc(1 * var(--stagger-delay));
+
+}
+
+.card:nth-child(2) {
+    grid-area: b;
+    animation-delay: calc(2 * var(--stagger-delay));
+}
+
+.card:nth-child(3) {
+    grid-area: c;
+    animation-delay: calc(3 * var(--stagger-delay));
+}
+
+.card:nth-child(4) {
+    grid-area: d;
+    animation-delay: calc(4 * var(--stagger-delay));
+}
+
+.card:nth-child(5) {
+    grid-area: e;
+    animation-delay: calc(5 * var(--stagger-delay));
+}
+
+.card:nth-child(6) {
+    grid-area: f;
+    animation-delay: calc(6 * var(--stagger-delay));
+}
+
+.card:nth-child(7) {
+    grid-area: g;
+    animation-delay: calc(7 * var(--stagger-delay));
+}
+
+.card:nth-child(8) {
+    grid-area: h;
+    animation-delay: calc(8 * var(--stagger-delay));
+}
+
+.card:nth-child(9) {
+    grid-area: i;
+    animation-delay: calc(9 * var(--stagger-delay));
+}
+
+.card:nth-child(10) {
+    grid-area: j;
+    animation-delay: calc(10 * var(--stagger-delay));
+}
+
+.card:nth-child(11) {
+    grid-area: k;
+    animation-delay: calc(11 * var(--stagger-delay));
+}
+
+.card:nth-child(12) {
+    grid-area: l;
+    animation-delay: calc(12 * var(--stagger-delay));
+}
+
+.card:last-child {
+    grid-area: ⭐️;
+    animation-delay: calc(13 * var(--stagger-delay));
 }
