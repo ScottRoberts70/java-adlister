@@ -22,8 +22,7 @@
     username = request.getParameter("username");
     String password;
     password = request.getParameter("password");
-    if (
-            username != null
+    if (username != null
     && password != null
     && username.equalsIgnoreCase("username")
     && password.equalsIgnoreCase("password")
