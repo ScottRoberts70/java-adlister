@@ -16,7 +16,7 @@
 <main>
 <div class="grid-container">
     <div class="grid-item item-1">
-        <img class="container_image" src="media/me.jpg"/>
+        <img class="container_image" src="../media/me.jpg"/>
         <h4>Scott Roberts</h4>
     </div>
     <div class="grid-item item-2">
