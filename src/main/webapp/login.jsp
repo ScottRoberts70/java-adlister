@@ -28,13 +28,20 @@
     && password.equalsIgnoreCase("password")
     ) {response.sendRedirect("/profile.jsp");}%>
 <div id = frm>
-    <h2>Please enter username and password</h2>
-<form action="login.jsp" method="POST">
+<<form>
+    <h3>Login Here</h3>
+
     <label for="username">Username</label>
-    <input type="text" id="username" placeholder="Enter UserName" name="username" required>
+    <input type="text" placeholder="Email or Phone" id="username">
+
     <label for="password">Password</label>
-    <input type="password" id="password" placeholder="Enter Password" name="password" required>
-    <button type="submit">Login</button>
+    <input type="password" placeholder="Password" id="password">
+
+    <button>Log In</button>
+    <div class="social">
+        <div class="go"><i class="fab fa-google"></i> Google</div>
+        <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+    </div>
 </form>
     <div>
         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consectetur, voluptatibus. Doloribus eaque explicabo hic laboriosam maiores, minus nisi nostrum, quibusdam quos ratione reiciendis reprehenderit sed suscipit vel veniam voluptas!</span><span>Consequuntur maxime molestiae voluptates? Dolorem eum nostrum nulla, quam quo repellendus saepe tempore vero vitae. Consequatur dolore, ducimus eligendi error, ex excepturi inventore, ipsam laudantium nesciunt porro quisquam reprehenderit! Quisquam.</span><span>At aut consequatur cumque explicabo illum maxime obcaecati perferendis provident rem repellendus. Adipisci iusto labore maxime porro ut velit. Dolorum enim fugit nemo nihil nulla sequi voluptatum! Architecto dolores, nemo.</span>

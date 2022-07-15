@@ -17,12 +17,14 @@
 <div class="grid-container">
     <div class="grid-item item-1">
         <img class="container_image" src="media/me.jpg"/>
+        <h4>Scott Roberts</h4>
     </div>
     <div class="grid-item item-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt dolorum odio. Architecto cupiditate doloremque earum, est fugiat hic ipsam laboriosam laborum non quasi quisquam sint ullam vero! Animi, quia?</p>
+        <p></p>
     </div>
     <div class="grid-item item-3">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt dolorum odio. Architecto cupiditate doloremque earum, est fugiat hic ipsam laboriosam laborum non quasi quisquam sint ullam vero! Animi, quia?</p>
+
+    <p></p>
 </div>
 </div>
 </main>

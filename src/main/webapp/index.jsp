@@ -21,7 +21,7 @@
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
-            <div class="card img-container"><img src="media/welcome.jpg" alt="A welcome mat"></div>
+            <div class="card" id="img-container"><img src="media/techmiddle.jpg" alt="A welcome mat"></div>
         </section>
     </c:if>
     <c:if test="false">
