@@ -33,5 +33,9 @@ public class PizzaServlet extends HttpServlet{
 }
 
 
-
+//String[] toppings = req.getParameterValues("toppings");
+//
+//PrintWriter out resp.getWriter();
+//out.println(crust);
+//if (toppings)
 
