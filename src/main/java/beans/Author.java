@@ -1,3 +1,5 @@
+package beans;
+
 import java.io.Serializable;
 
 public class Author implements Serializable {
@@ -7,6 +9,17 @@ public class Author implements Serializable {
 
 
     public Author() {  }
+
+    public Author(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Author(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public int getId() {
         return id;

@@ -1,13 +1,27 @@
+package beans;
+
 import java.io.Serializable;
 
 public class Quotes implements Serializable {
     private int id;
     private String content;
-    private String lastName;
-    private String author;
+
+    private Author author;
 
 
-    public Quotes() {  }
+    public Quotes() {
+    }
+
+    public Quotes(int id, String content, Author author) {
+        this.id = id;
+        this.content = content;
+        this.author = author;
+    }
+
+    public Quotes(String content, Author author) {
+        this.content = content;
+        this.author = author;
+    }
 
     public int getId() {
         return id;
@@ -25,20 +39,11 @@ public class Quotes implements Serializable {
         this.content = content;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 }
-
