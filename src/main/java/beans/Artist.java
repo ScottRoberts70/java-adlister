@@ -23,4 +23,36 @@ public class Artist implements Serializable {
         this.isBand = isBand;
         this.language = language;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isBand() {
+        return isBand;
+    }
+
+    public void setBand(boolean band) {
+        isBand = band;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 }

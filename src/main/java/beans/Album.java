@@ -8,21 +8,21 @@ public class Album implements Serializable {
     private Artist artist;
     private String name;
     private Date releaseDate;
-    private Float sales;
+    private Double sales;
     private String genre;
 
     public Album() {  }
 
-    public Album(long id, Artist artist, String name, Date releaseDate, Float sales, String genre) {
+    public Album(long id, Artist artist, String name, Date releaseDate, Double sales, String genre) {
         this.id = id;
-        this.artist  = artist;
+        this.artist = artist;
         this.name = name;
         this.releaseDate = releaseDate;
         this.sales = sales;
         this.genre = genre;
     }
 
-    public Album(String Artist, String name, Date releaseDate, Float sales, String genre) {
+    public Album(Artist artist, String name, Date releaseDate, Double sales, String genre) {
         this.artist = artist;
         this.name = name;
         this.releaseDate = releaseDate;
@@ -62,11 +62,11 @@ public class Album implements Serializable {
         this.releaseDate = releaseDate;
     }
 
-    public Float getSales() {
+    public Double getSales() {
         return sales;
     }
 
-    public void setSales(Float sales) {
+    public void setSales(Double sales) {
         this.sales = sales;
     }
 
