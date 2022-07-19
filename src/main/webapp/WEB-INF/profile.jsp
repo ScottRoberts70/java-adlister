@@ -9,8 +9,10 @@
     <jsp:include page="partials/navbar.jsp" />
 
     <div class="container">
-        <h1>Viewing your profile.</h1>
+        <h1>Hello, ${user}</h1>
     </div>
-
+<script>
+    document.querySelector("#logout").style.display = "block";
+</script>
 </body>
 </html>
